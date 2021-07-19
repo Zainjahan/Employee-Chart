@@ -1,0 +1,40 @@
+[
+    {
+        "company": "apple",
+        "roles": [
+            {
+                "month": "JAN 2021",
+                "value": 100
+            },
+            {
+                "month": "FEB 2021",
+                "value": 100
+            },
+            {
+                "month": "MARCH 2021",
+                "value": 100
+            }
+        ]
+    },
+    {
+        "company": "microsoft",
+        "roles": [
+            {
+                "month": "JAN 2021",
+                "value": 100
+            },
+            {
+                "month": "FEB 2021",
+                "value": 100
+            },
+            {
+                "month": "MARCH 2021",
+                "value": 100
+            },
+            {
+                "month": "APRIL 2021",
+                "value": 100
+            }
+        ]
+    }
+]

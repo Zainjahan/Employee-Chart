@@ -1,0 +1,25 @@
+{
+  "name": "nodejsprojects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "execute": "node index.js",
+    "watch": "node index.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cowsay": "^1.5.0",
+    "lodash": "^4.17.21",
+    "sass": "^1.34.1",
+    "webpack": "^5.38.1"
+  },
+  "devDependencies": {
+    "uuid": "^8.3.2"
+  }
+}

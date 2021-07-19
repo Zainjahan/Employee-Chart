@@ -1,0 +1,20 @@
+ <li  v-for="link in navlink" :key="link.id" class="nav-item">
+        <a class="nav-link" href="#">{{link.name}}</a>
+        
+        
+        
+        navlink:[{id:1, name: 'HOME'},
+    {id:2, name:'POLITICS'},
+    {id:3, name:'WORLD'},
+    {id:4,name:'BUSINESS'},
+    {id:5,name:'TRAVEL'},
+    {id:6, name: 'TECHNOLOGY'},
+    {id:7, name: 'SPORT'},
+    {id:8, name: 'CARS'},
+    {id:9, name:'VIDEOS'},
+    ]
+
+  }
+  
+  
+  https://log2base2.com/interview?utm_src=youtube&utm_target=ypinterviewg&gclid=EAIaIQobChMIg-zNiY6o8QIVHoT9Bx1qDgAPEAEYASAAEgJhW_D_BwE

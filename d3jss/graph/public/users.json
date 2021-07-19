@@ -1,0 +1,16 @@
+[
+    {
+        "date": "2018-07-02",
+        "open": 1682.7,
+        "high": 1713.89,
+        "low": 1678.06,
+        "close": 1713.78,
+        "volume": 3185696,
+        "unadjustedVolume": 3185696,
+        "change": 13.98,
+        "changePercent": 0.822,
+        "vwap": 1699.05,
+        "label": "Jul 2, 18",
+        "changeOverTime": 0
+    }
+]

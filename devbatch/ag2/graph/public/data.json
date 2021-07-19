@@ -1,0 +1,93 @@
+[
+    {
+        "company": "Apple",
+        "roles": [
+            {
+                "role": "CEO",
+                "months": [
+                    {
+                        "month": "JAN 2021",
+                        "value": 100
+                    },
+                    {
+                        "month": " 2021",
+                        "value": 100
+                    }
+                ]
+            },
+            {
+                "role": "DIRECTOR",
+                "month": {
+                    "month": "JAN 2021",
+                    "value": 100
+                }
+            },
+            {
+                "role": "HEAD OF CS",
+                "month": {
+                    "month": "JAN 2021",
+                    "value": 100
+                }
+            }
+        ]
+    },
+    {
+                "role": "AREA OF SM",
+                "months": [
+                    {
+                        "month": "JAN 2021",
+                        "value": 100
+                    },
+                    {
+                        "month": " 2021",
+                        "value": 100
+                    }
+                ]
+            },
+
+            {
+                "company": "microsoft",
+                "roles": [
+                    {
+                        "role": "CEO",
+                        "months": [
+                            {
+                                "month": "JAN 2021",
+                                "value": 100
+                            },
+                            {
+                                "month": " 2021",
+                                "value": 100
+                            }
+                        ]
+                    },
+                    {
+                        "role": "DIRECTOR",
+                        "month": {
+                            "month": "JAN 2021",
+                            "value": 100
+                        }
+                    },
+                    {
+                        "role": "HEAD OF CS",
+                        "month": {
+                            "month": "JAN 2021",
+                            "value": 100
+                        }
+                    }
+                ]
+            },
+            {
+                        "role": "AREA OF SM",
+                        "months": [
+                            {
+                                "month": "JAN 2021",
+                                "value": 100
+                            },
+                            {
+                                "month": " 2021",
+                                "value": 100
+                            }
+                        ]
+                    }
+]

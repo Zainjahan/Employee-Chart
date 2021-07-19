@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+  margin: 10px 0 0 10px;
+  padding: 0;
+}
+h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+circle {
+  fill: #4098af;
+}
+    </style>
+</head>
+<body>
+    <div class='axis-chart'></div>
+    <script>
+        var citiesUrl = 'https://codepen.io/codeschool/pen/OMJWrK.js';
+var margin = {
+    top: 20,
+    left: 40,
+    right: 20,
+    bottom: 30
+  },
+  options = {
+    height: 250 - margin.top - margin.bottom,
+    width: 500 - margin.left - margin.right
+  };
+
+d3.json(citiesUrl, createGraph);
+var barSelection;
+
+function createGraph(error, cities) {
+  var maxPopulation = d3.max(cities, function(c) {
+      return c.population;
+    }),
+    maxArea = d3.max(cities, function(c) {
+      return c.area;
+    });
+
+  var x = d3.scale.linear()
+    .domain([0, maxPopulation])
+    .range([0, options.width]);
+
+  var y = d3.scale.linear()
+    .domain([0, maxArea])
+    .range([options.height, 0]);
+
+  var chart = d3.select('.axis-chart')
+    .append('svg')
+    .attr('width', options.width + margin.right + margin.left)
+    .attr('height', options.height + margin.top + margin.bottom);
+
+  var main = chart.append('g')
+    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+    .attr('width', options.width)
+    .attr('height', options.height);
+
+  // draw the x axis
+  var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient('bottom')
+
+  main.append('g')
+    .attr('transform', 'translate(0,' + options.height + ')')
+    .attr('class', 'main axis date')
+    .call(xAxis)
+    .append("text")
+      .attr("y", -13)
+      .attr("x", options.width)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Population");
+
+  // draw the y axis
+  var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient('left');
+
+  main.append('g')
+    .attr('transform', 'translate(0,0)')
+    .attr('class', 'main axis date')
+    .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Area");
+
+  var g = main.append("g");
+
+  g.selectAll("circle")
+    .data(cities)
+    .enter()
+    .append("circle")
+    .attr("cx", function(d, i) {
+      return x(d.population);
+    })
+    .attr("cy", function(d) {
+      return y(d.area); 
+    })
+    .attr("r", 10);
+}
+
+
+    </script>
+</body>
+</html>
